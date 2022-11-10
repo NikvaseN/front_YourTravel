@@ -1,0 +1,331 @@
+body {
+    background-color: #242424;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #444;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 20px;
+    border: 3px solid #444;
+}
+
+/*Отметил то, что не сделал ещё*/
+.not-done {
+    opacity: 0.5;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-button {
+    color: #E7E7E7E7;
+    text-decoration: none;
+    font-family: Impact;
+    font-style: italic;
+    font-size: 280%;
+    letter-spacing: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/*.test{border-width: 1px;  border-style: solid; border-color: white;}    */
+.hbg1 {
+    background: url(bg1.2.jpg) no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 730px;
+}
+
+.hbg2 {
+    background: url(https://versiya.info/uploads/posts/2018-08/1534697240_before_i_fall_kisstemgoodbye_284329.jpg) no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 730px;
+}
+
+.hbg3 {
+    background: url(https://www.ivl.se/images/18.3eb0eaa0176bc20189e1089/1610463158842/foggy-forest.jpg) no-repeat;
+    filter: brightness(70%);
+    background-size: 100%;
+    width: 100%;
+    height: 730px;
+}
+
+.hbg4 {
+    background: url(https://vikingredning.no/wp-content/uploads/sites/3/2020/04/vinterferie-trafikk-kjor-forsiktig-hero-il.jpg) no-repeat;
+    filter: brightness(70%);
+    background-size: 100%;
+    width: 100%;
+    height: 730px;
+}
+
+.p2 {
+    color: #F0F0F0;
+    font-size: 280%;
+    font-family: MONOSPACE;
+    letter-spacing: 0px;
+    word-spacing: -8px;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 35px;
+}
+
+.kart-box {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.kart-box-img {
+    width: 400px;
+    height: 450px;
+}
+
+.kart-box-div {
+    height: 550px;
+    transition: .2s;
+    border: 2px solid #888;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.kart-box-div.middle {
+    margin: 0 180px;
+}
+
+.kart-box-div:hover {
+    transform: scale(1.1)
+}
+
+a:hover,
+a {
+    text-decoration: none;
+}
+
+.kart-box {
+    text-align: center;
+}
+
+.kart-box-text {
+    text-decoration: none;
+    color: #E7E7E7E7;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pf {
+    color: #fff;
+    font-size: 25px;
+    font-family: impact;
+    margin: 0;
+    justify-self: flex-start;
+    margin-right: auto;
+    margin-left: 150px;
+}
+
+.pf3 {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.pf4 {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.f-vk {
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footer-block {
+    height: 100%;
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container {
+    background-color: #242424;
+    width: 100%;
+    height: 2200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*min-width: 515px;*/
+}
+
+@media (max-width: 1680px) {
+    .slider-height {
+        height: 600px;
+    }
+
+    .kart-box {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .kart-box-div:not(.middle) {
+        margin: 50px 180px;
+    }
+
+    .container {
+        height: 5900px;
+    }
+
+    .p2 {
+        margin-top: 30px;
+        font-size: 260%;
+        margin-bottom: 50px
+    }
+}
+
+@media (max-width: 780px) {
+    .slider-height {
+        height: 250px;
+    }
+
+    .pf {
+        font-size: 15px;
+    }
+
+    .pf3 {
+        font-size: 12px;
+    }
+
+    .pf4 {
+        font-size: 12px;
+    }
+
+    .f-vk {
+        width: 20px;
+        height: 20px
+    }
+
+    .footer {
+        height: 30px;
+    }
+
+    .kart-box-img {
+        width: 200px;
+        height: 225px;
+    }
+
+    .kart-box-div {
+        height: 290px;
+    }
+
+    .kart-box-text {
+        font-size: 20px;
+    }
+
+    .container {
+        height: 3500px;
+    }
+
+    .p2 {
+        font-size: 120%;
+        margin-bottom: 20px;
+        word-spacing: -5px;
+        line-height: 25px;
+    }
+
+    .main-button {
+        font-size: 160%;
+    }
+
+    .header {
+        height: 45px;
+    }
+}
+
+@media (max-width: 589px) {
+    .kart-box-img {
+        width: 133.3px;
+        height: 150px;
+    }
+
+    .kart-box-div {
+        height: 195px;
+    }
+
+    .kart-box-text {
+        font-size: 15px;
+    }
+
+    .container {
+        height: 2650px;
+    }
+
+    .pf {
+        font-size: 11px;
+    }
+
+    .pf3 {
+        font-size: 10px;
+    }
+
+    .pf4 {
+        font-size: 10px;
+    }
+
+    .f-vk {
+        width: 19px;
+        height: 19px
+    }
+
+    .footer {
+        height: 30px;
+    }
+
+    .main-button {
+        font-size: 120%;
+    }
+
+    .header {
+        height: 35px;
+    }
+
+    .p2 {
+        font-size: 120%;
+        margin-bottom: 30px;
+        word-spacing: -5px;
+    }
+
+    .slider-height {
+        height: 150px;
+    }
+}
